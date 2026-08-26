@@ -1,0 +1,16 @@
+name: AB13X Audio Meter
+version: "1.0.0"
+slug: ab13x_audio_meter
+description: Live AB13X input/output meter with PulseAudio volume and mute controls
+arch:
+  - aarch64
+  - amd64
+audio: true
+init: false
+startup: services
+boot: auto
+ports:
+  8765/tcp: 8765
+ports_description:
+  8765/tcp: Internal audio meter API
+panel_icon: mdi:audio-video

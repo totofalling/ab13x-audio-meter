@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bashio
+echo "=== AB13X Audio Meter starting ==="
+echo "PulseAudio sources:"
+pactl list short sources || true
+echo "PulseAudio sinks:"
+pactl list short sinks || true
+exec python3 /usr/bin/server.py
